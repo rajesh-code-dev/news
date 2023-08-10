@@ -31,8 +31,12 @@ export default function News() {
 
     const { name } = useContext(UserContext)
 
+    searchValue.map((item) => {
+        setselected(item)
+    })
+
     useEffect(() => {
-        Axios.get('http://localhost:3001/food')
+        Axios.get(`http://localhost:3001/food${selected}`)
             .then((data) => {
                 const result = data.data;
                 setNews(result);
@@ -81,6 +85,10 @@ export default function News() {
         hidePop('none')
     }
 
+    const buttonValue = (item) => {
+        setSearchValue(item)
+    }
+
     return (
         <div className='newsContainer'>
             {name ? <div className='popupContainer' style={{ display: hide }}>
@@ -103,7 +111,7 @@ export default function News() {
 
             <div className="favButtons">
                 {Object.keys(fav).map((selectedCategory, index) => (
-                    <button style={{ color: '#fff' }} className='favButton' onClick={setNewsType} key={index}>{selectedCategory}</button>
+                    <button style={{ color: '#fff' }} className='favButton' onClick={buttonValue(selectedCategory)} key={index}>{selectedCategory}</button>
                 ))}
             </div>
 
