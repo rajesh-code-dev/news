@@ -1,0 +1,122 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftContainer{
+  width: 62%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img {
+  width: 100%;
+}
+
+.rightContainer {
+  width: 35vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.heading{
+  margin-bottom: 40px;
+}
+
+.heading h1{
+  font-size: 50px;
+  font-weight: 900;
+
+}
+
+.userContainer label {
+  font-size: 18px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.userContainer input {
+  width: 20vw;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.passwordContainer label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.passwordContainer input {
+  width: 20vw;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.buttonContainer button {
+  width: 20vw;
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.forgotContainer a {
+  font-size: 20px;
+}
+
+.register p {
+  font-size: 20px;
+}
+
+.register p a {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 880px) {
+  .loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .userContainer input {
+    width: 100%;
+    
+  }
+
+  .passwordContainer input {
+    width: 100%;
+  }
+
+  .img {
+    width: 80vw;
+  }
+  .leftContainer{
+    display: none;
+  }
+
+  .rightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}

@@ -1,0 +1,100 @@
+.newsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.articlesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.newsArray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.popupContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popupContainer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.news-item {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.favButton{
+    background-color: rgb(43, 11, 72);
+    margin: 10px;
+    border: 2px solid;
+    /* width: 5vw; */
+    width: 120px;
+    border-radius: 4px;
+    
+    padding: 5px;
+}
+
+@media only screen and (min-width: 600px){
+    .news-item {
+        width: 70%;
+    }
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    background: #fff;
+    height: 90vh;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.box img{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
